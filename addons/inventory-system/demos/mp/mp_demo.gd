@@ -24,7 +24,7 @@ func create_player(peer_id : int):
 		setup_crafter(player.get_node("Crafter"))
 
 
-@rpc	
+@rpc
 func add_newly_connected_player_character(new_peer_id):
 	create_player(new_peer_id)
 

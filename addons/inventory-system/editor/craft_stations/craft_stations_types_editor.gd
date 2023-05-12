@@ -110,4 +110,3 @@ func _on_open_resource_dialog_file_selected(path):
 		load_craft_station_types()
 		editor_plugin.get_editor_interface().get_resource_filesystem().scan()
 		emit_signal("data_changed")
-			

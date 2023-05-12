@@ -36,7 +36,8 @@ func update_item(index : int):
 	var category = categories_list_handler[index]
 	var name_to_show : String = category.name
 	var icon : Texture2D = category.icon
-	list.set_item_text(index, name_to_show + " ("+category.resource_path+")")
+	list.set_item_text(index, name_to_show)
+	list.set_item_tooltip(index, name_to_show + "\n"+category.resource_path+"")
 	list.set_item_icon(index, icon)
 
 

@@ -135,3 +135,8 @@ remove_item_c={
 [native_extensions]
 
 paths=["res://addons/inventory-system/inventory-system.gdextension"]
+
+[rendering]
+
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_taa=true
