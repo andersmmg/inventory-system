@@ -136,14 +136,15 @@ func _slot_point_down(event : InputEvent, slot_index : int, inventory : Inventor
 		inventory_handler.transaction_to_at(slot_index, inventory)
 		$SlotDrop.play()
 	else:
-		if inventory.is_empty_slot(slot_index):
-			return
-		var slot = inventory.slots[slot_index]
-		var amount = slot.amount
-		if event.button_index == 2:
-			amount = ceili(slot.amount/2.0)
-		inventory_handler.to_transaction(slot_index, inventory, amount)	
-		$SlotClick.play()
+		if event.button_index in [1,2,3]:
+			if inventory.is_empty_slot(slot_index):
+				return
+			var slot = inventory.slots[slot_index]
+			var amount = slot.amount
+			if event.button_index == 2:
+				amount = ceili(slot.amount/2.0)
+			inventory_handler.to_transaction(slot_index, inventory, amount)	
+			$SlotClick.play()
 		
 
 func _inventory_point_down(event : InputEvent, inventory : Inventory):

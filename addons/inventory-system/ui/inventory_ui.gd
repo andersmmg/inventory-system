@@ -86,7 +86,7 @@ func _on_slot_removed(index):
 
 func _on_slot_gui_input(event : InputEvent, slot_obj):
 	if event is InputEventMouseButton:
-		if event.pressed:	
+		if event.pressed:
 			var index = slots.find(slot_obj)
 			if index < 0:
 				return 

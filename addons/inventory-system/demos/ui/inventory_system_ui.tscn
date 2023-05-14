@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dsfknmib2psmv" path="res://addons/inventory-system/demos/ui/inventory_ui.tscn" id="3_sohfg"]
 [ext_resource type="Script" path="res://addons/inventory-system/ui/transaction_slot.gd" id="3_ugeom"]
 [ext_resource type="Texture2D" uid="uid://c0jaj36qvgqvs" path="res://addons/inventory-system/demos/assets/kenney_medievalrtspack/PNG/Default size/Environment/medievalEnvironment_10.png" id="4_0oqwp"]
-[ext_resource type="PackedScene" path="res://addons/inventory-system/demos/ui/slot_ui.tscn" id="4_5h6ud"]
+[ext_resource type="PackedScene" uid="uid://d0exira3cfsbw" path="res://addons/inventory-system/demos/ui/slot_ui.tscn" id="4_5h6ud"]
 [ext_resource type="Texture2D" uid="uid://cj2dnhj4hf4p3" path="res://addons/inventory-system/demos/assets/uipack-rpg/PNG/iconCross_brown.png" id="4_5nfxk"]
 [ext_resource type="AudioStream" uid="uid://b7o8wgktle6ai" path="res://addons/inventory-system/demos/assets/kenney_rpgaudio/Audio/bookPlace1.ogg" id="6_vp41x"]
 [ext_resource type="Script" path="res://addons/inventory-system/ui/hotbar_ui.gd" id="7_e17fd"]
@@ -33,7 +33,7 @@ script = ExtResource("3_ugeom")
 [node name="Panel" parent="TransactionSlotUI" index="1"]
 self_modulate = Color(1, 1, 0.541176, 1)
 
-[node name="Item Icon" parent="TransactionSlotUI" index="2"]
+[node name="Item Icon" parent="TransactionSlotUI" index="3"]
 texture = ExtResource("4_0oqwp")
 
 [node name="DropIcon" type="TextureRect" parent="TransactionSlotUI"]

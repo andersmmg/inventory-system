@@ -100,7 +100,6 @@ theme_override_constants/margin_bottom = 4
 [node name="ScrollContainer" type="ScrollContainer" parent="RecipesUI/Control/MarginContainer"]
 layout_mode = 2
 horizontal_scroll_mode = 0
-vertical_scroll_mode = 2
 
 [node name="UI Inventory" type="VBoxContainer" parent="RecipesUI/Control/MarginContainer/ScrollContainer"]
 layout_mode = 2
