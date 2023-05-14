@@ -48,8 +48,8 @@ func open(craft_station : CraftStation):
 		input_inventory_ui.set_inventory(craft_station.input_inventory)
 	if valid_output: 
 		input_inventory_ui.set_inventory(craft_station.input_inventory)
-	input_inventory_ui.visible = valid_input
-	output_inventory_ui.visible = valid_output
+	input_inventory_ui.visible = valid_input && false
+	output_inventory_ui.visible = valid_output && false
 
 
 ## Hidden this UI

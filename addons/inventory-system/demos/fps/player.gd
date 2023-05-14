@@ -137,6 +137,8 @@ func open_inventory(inventory : Inventory):
 
 
 func open_station(craft_station : CraftStation):
+	craft_station.input_inventory = $InventoryHandler/Inventory
+	craft_station.output_inventory = $InventoryHandler/Inventory
 	if not crafter.is_open(craft_station):
 		crafter.open(craft_station)
 
